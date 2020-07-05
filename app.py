@@ -23,7 +23,7 @@ def home():
 @app.route('/predict', methods=['POST'])
 
 def predict():
-    data=pd.read_csv("E:\\Data Science\\Data_Science_Projects\\Project_6_Predicting_Car_selling_Price\\Dataset\\data.csv")
+    data=pd.read_csv("data.csv")
     data=data.drop(["Car_Name"],axis=1) 
     data["Current_year"]=2020
     data["no_year"]=data["Current_year"]-data["Year"]
