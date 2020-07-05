@@ -8,7 +8,6 @@ Created on Sun Jul  5 19:21:34 2020
 
 import pickle
 from flask import Flask,render_template,url_for,request
-import pandas as pd 
 import matplotlib.pyplot as plt
 import numpy as np
 from sklearn.model_selection import train_test_split
